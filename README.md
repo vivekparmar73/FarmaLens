@@ -1,40 +1,51 @@
-🌱 FarmaLens – AI-Powered Farming Assistant
-FarmaLens is an AI-powered farming app that helps farmers analyze plant health and fertilizer details using image recognition and Google’s Gemini API. 📸🌾
+# 🌱 **FarmaLens** – AI-Powered Farming Assistant  
 
-📸 Screenshots
-![1](https://github.com/user-attachments/assets/ad734fda-dfad-4c13-8b4d-17ae95560737)
-![2](https://github.com/user-attachments/assets/fef5c53b-4fc9-4d1c-ad02-a8fb79ddf4df)
-![3](https://github.com/user-attachments/assets/d10dd7d0-5647-4ee4-ba07-1ef8f105fc85)
-![4](https://github.com/user-attachments/assets/3651f290-816a-4a6a-a0f7-6e26cbba5235)
+Welcome to **FarmaLens** – your smart farming companion! 🚜🌾 This app leverages AI to analyze fertilizers, detect plant diseases, and provide real-time farming insights using **Google ML Kit** and **Gemini AI**.  
 
-📜 Features
-✅ AI-Powered Text Recognition – Extracts text from fertilizer labels and plant images.
-✅ Plant Disease Detection – Identifies plant diseases and provides treatment suggestions.
-✅ Fertilizer Analysis – Analyzes fertilizer composition, usage, and benefits.
-✅ Google Gemini API Integration – Uses advanced AI for accurate responses.
-✅ User-Friendly UI – Modern Material Design with smooth navigation.
+---
 
-📱 App Screens
-🏁 Splash Screen
-Displays the FarmaLens logo and transitions to the main screen.
-🏠 Main Activity
-Allows users to select an image (plant or fertilizer).
-Provides an option to add instructions for better AI results.
-Submit button to process the image.
-📊 Result Activity
-Extracted text is displayed.
-AI-generated analysis of the image.
-Provides detailed insights based on the extracted text.
+## 📸 **Screenshots**
+![1](https://github.com/user-attachments/assets/e9b55387-a771-438b-a391-af9e8b5d5bd9)
+![2](https://github.com/user-attachments/assets/c692167f-e6c1-40f7-9f73-40aebafac5bd)
+![3](https://github.com/user-attachments/assets/17883023-28b1-463f-b6f6-137ef0313c93)
+![4](https://github.com/user-attachments/assets/b0f0a4a3-e6a0-4226-b352-af98f36b345e)
 
-🛠️ Technologies Used
-Android (Java)
-Google ML Kit – For text recognition.
-Gemini API – For AI-powered analysis.
-Material Design Components – For modern UI/UX.
 
-🔧 How It Works
-1️⃣ Capture or Select an Image of a plant or fertilizer.
-2️⃣ Extract Text using Google ML Kit.
-3️⃣ Analyze with Gemini API to provide meaningful insights.
-4️⃣ Get Results with recommendations and solutions.
+---
+
+## 🚀 **Features**
+✅ **AI-Powered Image Recognition** – Analyze fertilizers & plant health from images.  
+✅ **Smart OCR (Optical Character Recognition)** – Extracts text from fertilizer labels & packaging.  
+✅ **Disease Detection** – Identifies plant diseases and suggests treatments.  
+✅ **Fertilizer Information** – Provides NPK ratio, usage instructions, and safety guidelines.  
+✅ **Interactive User Interface** – Simple and clean design for a smooth user experience.  
+✅ **Google Gemini API Integration** – Uses AI to process farming-related queries and provide insights.  
+
+---
+
+## 📱 **App Screens**
+### 1️⃣ **Splash Screen**  
+Displays the FarmaLens logo with a smooth transition to the main interface.  
+
+### 2️⃣ **Main Activity**  
+- Upload or capture an image of fertilizer packaging or plant leaves.  
+- Enter additional instructions for better AI analysis.  
+- Click **Submit** to process the image.  
+
+### 3️⃣ **Result Activity**  
+- Extracted text from the image is displayed.  
+- AI-powered analysis provides information on fertilizer or disease detection.  
+- The user gets actionable insights for better farming decisions.  
+
+---
+
+## 🛠 **Technologies Used**
+- **Android (Java)** – Core app development.  
+- **Google ML Kit** – Text recognition and image processing.  
+- **Gemini API** – AI-powered responses and analysis.  
+- **Material Design** – Modern UI components and styling.  
+
+---
+
+💡 *Empower your farm with AI! 🌱🚀*
 
