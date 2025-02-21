@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\font_poppins_semibold.ttf.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\font\\poppins_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\layout_activity_result.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_fade_out.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_translate_scale.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\translate_scale.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-pngs-37:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.safety.ai_powereddoubtsolver.app-merged_res-42:/layout_activity_main.xml.flat",
+        "source": "com.safety.ai_powereddoubtsolver.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\layout_activity_spalsh.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\layout\\activity_spalsh.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_bg.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\bg.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_slide_bottom.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\slide_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\font_poppins_light.ttf.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\font\\poppins_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\raw_image_lottie.lottie.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\raw\\image_lottie.lottie"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\font_roboto_italic_file.ttf.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\font\\roboto_italic_file.ttf"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_ic_camera.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\ic_camera.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_animation2.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\animation2.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_bg_1.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\bg_1.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_ic_capture.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\ic_capture.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-debug-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_ic_choosegalary.png.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\ic_choosegalary.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_translate.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\translate.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_scale_anim.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\scale_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\drawable_round_bg.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\drawable\\round_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-merged_res-42:\\anim_fade_in.xml.flat",
+        "source": "C:\\Users\\pc\\.gradle\\daemon\\7.4\\com.safety.ai_powereddoubtsolver.app-main-44:\\anim\\fade_in.xml"
+    }
+]

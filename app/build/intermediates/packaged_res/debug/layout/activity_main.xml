@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="FarmaLens"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Smart AI for \nModern Farming"
+                android:textColor="#2196F3"
+                android:textSize="@dimen/_25ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Instantly analyze fertilizers &amp; detect plant diseases! 🌱✨"
+                android:textColor="#2196F3"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/image_lottie" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/btnCapture"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/ic_capture" />
+            <!--            <Button-->
+            <!--                android:id="@+id/btnCapture"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:backgroundTint="@color/purple_500"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="Capture Image"-->
+            <!--                android:textColor="@android:color/white"-->
+            <!--                android:textSize="18sp" />-->
+
+            <ImageView
+                android:id="@+id/btnChooseFromGallery"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/ic_choosegalary" />
+            <!--            -->
+            <!--            <Button-->
+            <!--                android:id="@+id/btnChooseFromGallery"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:backgroundTint="@color/teal_700"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="Choose from Gallery"-->
+            <!--                android:textColor="@android:color/white"-->
+            <!--                android:textSize="18sp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
