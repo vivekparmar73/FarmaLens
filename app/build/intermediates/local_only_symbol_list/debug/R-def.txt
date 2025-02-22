@@ -11,6 +11,7 @@ anim slide_out_left
 anim slide_out_right
 anim translate
 anim translate_scale
+array serializers
 color black
 color black_100
 color blue
@@ -41,6 +42,7 @@ id buttonSubmit
 id editTextInstructions
 id imageView
 id lottie
+id progressBarLoader
 id splash_logo
 id textViewResult
 id toolbar

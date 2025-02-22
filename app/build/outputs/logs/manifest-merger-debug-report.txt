@@ -11,14 +11,15 @@ INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManif
 	android:name
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:59:13-62
 manifest
-ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
+ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\pc\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pc\.gradle\caches\transforms-3\28075e3b5fe6386b541742e3f2e4f8fe\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.CanHub:Android-Image-Cropper:4.3.2] C:\Users\pc\.gradle\caches\transforms-3\c57e3afd554ca41121f2fe885c46c4b9\transformed\jetified-Android-Image-Cropper-4.3.2\AndroidManifest.xml:2:1-38:12
 MERGED from [com.airbnb.android:lottie:6.0.0] C:\Users\pc\.gradle\caches\transforms-3\6f0f2e620af1b3a541fb1cccaba323c2\transformed\jetified-lottie-6.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.NitishGadangi:TypeWriter-TextView:v1.3] C:\Users\pc\.gradle\caches\transforms-3\eadee9f2c00a2474bd933225db2880b4\transformed\jetified-TypeWriter-TextView-v1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pc\.gradle\caches\transforms-3\cbaf0bb820626f2835e48eddccc765f7\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\pc\.gradle\caches\transforms-3\3237c50a3caa87d96377052b95ee4677\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.mlkit:text-recognition:16.0.0] C:\Users\pc\.gradle\caches\transforms-3\1222c5b755cf125c39d6ab6613a70f18\transformed\jetified-text-recognition-16.0.0\AndroidManifest.xml:2:1-7:12
@@ -87,22 +88,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\pc\.gradle\caches\transforms-3\e49e4dff70250dbb03e409465432a16f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pc\.gradle\caches\transforms-3\8fc18869509e9a573a34b88cc5e2f788\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\pc\.gradle\caches\transforms-3\b9b2c6c46f926e40364b3a32bebbea99\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
 	package
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
+		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
+		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-73:12
+		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:1-79:12
 		INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:2:11-69
@@ -147,7 +148,7 @@ ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:14:9-47
 application
-ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:17:5-71:19
+ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:17:5-77:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\pc\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\pc\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pc\.gradle\caches\transforms-3\28075e3b5fe6386b541742e3f2e4f8fe\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -254,6 +255,12 @@ MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\pc\.
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:70:13-66
 	android:name
 		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:69:13-58
+meta-data#edu.stanford.nlp.pipeline.AnnotationSerializers
+ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:72:9-74:53
+	android:resource
+		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:74:13-50
+	android:name
+		ADDED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml:73:13-75
 uses-sdk
 INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android_projects\AIPoweredDoubtSolver\app\src\main\AndroidManifest.xml
@@ -266,6 +273,8 @@ MERGED from [com.github.CanHub:Android-Image-Cropper:4.3.2] C:\Users\pc\.gradle\
 MERGED from [com.github.CanHub:Android-Image-Cropper:4.3.2] C:\Users\pc\.gradle\caches\transforms-3\c57e3afd554ca41121f2fe885c46c4b9\transformed\jetified-Android-Image-Cropper-4.3.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.airbnb.android:lottie:6.0.0] C:\Users\pc\.gradle\caches\transforms-3\6f0f2e620af1b3a541fb1cccaba323c2\transformed\jetified-lottie-6.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.airbnb.android:lottie:6.0.0] C:\Users\pc\.gradle\caches\transforms-3\6f0f2e620af1b3a541fb1cccaba323c2\transformed\jetified-lottie-6.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.NitishGadangi:TypeWriter-TextView:v1.3] C:\Users\pc\.gradle\caches\transforms-3\eadee9f2c00a2474bd933225db2880b4\transformed\jetified-TypeWriter-TextView-v1.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.NitishGadangi:TypeWriter-TextView:v1.3] C:\Users\pc\.gradle\caches\transforms-3\eadee9f2c00a2474bd933225db2880b4\transformed\jetified-TypeWriter-TextView-v1.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pc\.gradle\caches\transforms-3\cbaf0bb820626f2835e48eddccc765f7\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pc\.gradle\caches\transforms-3\cbaf0bb820626f2835e48eddccc765f7\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\pc\.gradle\caches\transforms-3\3237c50a3caa87d96377052b95ee4677\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44

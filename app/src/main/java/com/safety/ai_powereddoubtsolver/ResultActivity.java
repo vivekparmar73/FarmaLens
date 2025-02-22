@@ -6,9 +6,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +21,7 @@ import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
+import com.nitish.typewriterview.TypeWriterView;
 
 import okhttp3.*;
 
@@ -32,9 +35,11 @@ public class ResultActivity extends AppCompatActivity {
     private ImageView imageView;
     private EditText editTextInstructions;
     private Button buttonSubmit;
-    private TextView textViewResult;
+    private TypeWriterView textViewResult;
     private String extractedText = "";
     private Uri imageUri;
+    private ProgressBar progressBarLoader;
+
 
     private static final String GEMINI_API_KEY = "AIzaSyBpn6XHWbxjSuzZCb2BoEwSw0suePhdJ-s"; // Replace with your API Key
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=" + GEMINI_API_KEY;
@@ -49,18 +54,20 @@ public class ResultActivity extends AppCompatActivity {
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true); // back button
-            getSupportActionBar().setDisplayShowTitleEnabled(false); // Hide default title
-            toolbar.setNavigationOnClickListener(v -> onBackPressed()); // Handle back button click
-
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+            toolbar.setNavigationOnClickListener(v -> onBackPressed());
         }
 
-        toolbarTitle.setText("FarmaLens"); // Set custom title
+        toolbarTitle.setText("FarmaLens");
 
         imageView = findViewById(R.id.imageView);
         editTextInstructions = findViewById(R.id.editTextInstructions);
         buttonSubmit = findViewById(R.id.buttonSubmit);
         textViewResult = findViewById(R.id.textViewResult);
+        progressBarLoader = findViewById(R.id.progressBarLoader); // Initialize ProgressBar
+
+        progressBarLoader.setVisibility(View.GONE); // Initially hide the loader
 
         requestPermissions();
 
@@ -70,49 +77,10 @@ public class ResultActivity extends AppCompatActivity {
             imageView.setImageURI(imageUri);
             processImageForTextRecognition(imageUri);
         } else {
-            textViewResult.setText("Error: No image provided.");
+            textViewResult.animateText("Error: No image provided.");
         }
 
-        buttonSubmit.setOnClickListener(v -> {
-            if (imageUri == null) {
-                textViewResult.setText("Error: No image selected.");
-                return;
-            }
-
-            String userInstruction = editTextInstructions.getText().toString().trim();
-            String fullPrompt;
-
-            if (isFertilizer(extractedText)) {
-                // Fertilizer-specific prompt
-                fullPrompt = "Analyze the provided image and extract fertilizer-related details. Provide the following:\n" +
-                        "1. Fertilizer Name\n" +
-                        "2. Composition (NPK Ratio, Micronutrients, Organic/Inorganic)\n" +
-                        "3. Usage Instructions (How and when to apply)\n" +
-                        "4. Benefits (Which plants/crops it is best for)\n" +
-                        "5. Precautions and Safety Guidelines\n\n";
-
-                if (!extractedText.isEmpty()) {
-                    fullPrompt += "Extracted Text from Fertilizer Image:\n" + extractedText + "\n\n";
-                }
-            } else {
-                // Plant disease analysis
-                fullPrompt = "Analyze the provided image of a plant and detect:\n" +
-                        "1. Plant Name\n" +
-                        "2. Any detected disease, symptoms, and causes\n" +
-                        "3. Recommended treatments, fertilizers, and pesticides\n" +
-                        "4. Preventive measures to maintain plant health\n\n";
-
-                if (!extractedText.isEmpty()) {
-                    fullPrompt += "Extracted Text from Plant Image:\n" + extractedText + "\n\n";
-                }
-            }
-
-            if (!userInstruction.isEmpty()) {
-                fullPrompt += "User Instruction: " + userInstruction;
-            }
-
-            callGeminiAPI(fullPrompt);
-        });
+        buttonSubmit.setOnClickListener(v -> handleUserInput());
     }
 
     private void processImageForTextRecognition(Uri uri) {
@@ -122,11 +90,11 @@ public class ResultActivity extends AppCompatActivity {
                     .process(image)
                     .addOnSuccessListener(this::handleTextRecognition)
                     .addOnFailureListener(e -> {
-                        textViewResult.setText("Failed to recognize text from the image.");
+                        textViewResult.animateText("Failed to recognize text from the image.");
                         Log.e("OCR Error", "Error recognizing text", e);
                     });
         } catch (IOException e) {
-            textViewResult.setText("Error processing image.");
+            textViewResult.animateText("Error processing image.");
             Log.e("Image Processing", "Error loading image", e);
         }
     }
@@ -134,22 +102,56 @@ public class ResultActivity extends AppCompatActivity {
     private void handleTextRecognition(Text visionText) {
         extractedText = visionText.getText();
         if (extractedText.isEmpty()) {
-            textViewResult.setText("No detected! Analyzing visual content...");
+            textViewResult.animateText("No text detected! Analyzing the image visually...");
         } else {
-            textViewResult.setText("Processing details...");
+            textViewResult.animateText("Analyzing extracted details...");
         }
+    }
+
+    private void handleUserInput() {
+        if (imageUri == null) {
+            textViewResult.animateText("Error: No image selected.");
+            return;
+        }
+
+        String userInstruction = editTextInstructions.getText().toString().trim();
+        String fullPrompt = generatePrompt(userInstruction);
+
+        // Show Loader and Disable Submit Button
+        progressBarLoader.setVisibility(View.VISIBLE);
+        buttonSubmit.setEnabled(false);
+        textViewResult.animateText("Processing... Please wait.");
+
+        callGeminiAPI(fullPrompt);
+    }
+
+    private String generatePrompt(String userInstruction) {
+        String prompt;
+        if (!extractedText.isEmpty()) {
+            if (isFertilizer(extractedText)) {
+                prompt = "**The image contains a Fertilizer Product Label.** Analyze and provide detailed information on the fertilizer based on the extracted text.";
+            } else {
+                prompt = "**The image contains plant-related text.** Analyze the text and provide relevant information about the plant, diseases, and treatments.";
+            }
+        } else {
+            prompt = "**No readable text detected.** Analyze the image visually and determine relevant details.";
+        }
+
+        if (!userInstruction.isEmpty()) {
+            prompt += "\n**User Instruction:** " + userInstruction;
+        }
+        return prompt;
     }
 
     private void callGeminiAPI(String userInput) {
         OkHttpClient client = new OkHttpClient();
-
         JSONObject payload = new JSONObject();
-        JSONArray contentsArray = new JSONArray();
-        JSONObject userObject = new JSONObject();
-        JSONArray partsArray = new JSONArray();
-        JSONObject textPart = new JSONObject();
-
         try {
+            JSONArray contentsArray = new JSONArray();
+            JSONObject userObject = new JSONObject();
+            JSONArray partsArray = new JSONArray();
+            JSONObject textPart = new JSONObject();
+
             textPart.put("text", userInput);
             partsArray.put(textPart);
             userObject.put("role", "user");
@@ -157,66 +159,79 @@ public class ResultActivity extends AppCompatActivity {
             contentsArray.put(userObject);
             payload.put("contents", contentsArray);
         } catch (Exception e) {
-            runOnUiThread(() -> textViewResult.setText("Error creating JSON request"));
-            Log.e("GeminiAPI", "JSON Error", e);
+            runOnUiThread(() -> {
+                textViewResult.animateText("Error creating JSON request");
+                progressBarLoader.setVisibility(View.GONE);
+                buttonSubmit.setEnabled(true);
+            });
             return;
         }
 
         RequestBody body = RequestBody.create(payload.toString(), MediaType.get("application/json"));
-        Request request = new Request.Builder()
-                .url(GEMINI_API_URL)
-                .post(body)
-                .addHeader("Content-Type", "application/json")
-                .build();
+        Request request = new Request.Builder().url(GEMINI_API_URL).post(body).addHeader("Content-Type", "application/json").build();
 
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                runOnUiThread(() -> textViewResult.setText("API Error: " + e.getMessage()));
-                Log.e("GeminiAPI", "API Call Failed", e);
+                runOnUiThread(() -> {
+                    textViewResult.animateText("API Error: " + e.getMessage());
+                    progressBarLoader.setVisibility(View.GONE);
+                    buttonSubmit.setEnabled(true);
+                });
             }
 
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 String responseData = response.body().string();
-                Log.d("GeminiAPI", "Full Response: " + responseData);
-
                 if (!response.isSuccessful()) {
-                    runOnUiThread(() -> textViewResult.setText("API Error: " + response.code() + " " + response.message()));
+                    runOnUiThread(() -> {
+                        textViewResult.animateText("API Error: " + response.code() + " " + response.message());
+                        progressBarLoader.setVisibility(View.GONE);
+                        buttonSubmit.setEnabled(true);
+                    });
                     return;
                 }
 
                 try {
                     JSONObject jsonResponse = new JSONObject(responseData);
                     JSONArray candidates = jsonResponse.optJSONArray("candidates");
-
                     if (candidates != null && candidates.length() > 0) {
-                        JSONObject firstCandidate = candidates.getJSONObject(0);
-                        JSONObject content = firstCandidate.optJSONObject("content");
+                        String aiResponse = candidates.getJSONObject(0)
+                                .optJSONObject("content")
+                                .optJSONArray("parts")
+                                .getJSONObject(0)
+                                .optString("text", "")
+                                .replace("**", "") // Remove asterisks
+                                .replace("*", "") // Remove asterisks
+                                .trim();
 
-                        if (content != null) {
-                            JSONArray parts = content.optJSONArray("parts");
+                        runOnUiThread(() -> textViewResult.animateText("AI Response:\n" + aiResponse));
 
-                            if (parts != null && parts.length() > 0) {
-                                String aiResponse = parts.getJSONObject(0).optString("text", "").trim();
-                                runOnUiThread(() -> textViewResult.setText("AI Response:\n" + aiResponse));
-                                return;
-                            }
-                        }
+                        runOnUiThread(() -> {
+                            textViewResult.animateText("AI Response:\n" + aiResponse);
+                            progressBarLoader.setVisibility(View.GONE);
+                            buttonSubmit.setEnabled(true);
+                        });
+                    } else {
+                        runOnUiThread(() -> {
+                            textViewResult.animateText("AI Response: (Invalid response)");
+                            progressBarLoader.setVisibility(View.GONE);
+                            buttonSubmit.setEnabled(true);
+                        });
                     }
-                    runOnUiThread(() -> textViewResult.setText("AI Response: (Invalid response)"));
-
                 } catch (Exception e) {
-                    runOnUiThread(() -> textViewResult.setText("Error parsing response: " + e.getMessage()));
-                    Log.e("GeminiAPI", "Parsing error", e);
+                    runOnUiThread(() -> {
+                        textViewResult.animateText("Error parsing response: " + e.getMessage());
+                        progressBarLoader.setVisibility(View.GONE);
+                        buttonSubmit.setEnabled(true);
+                    });
                 }
             }
         });
     }
 
     private boolean isFertilizer(String text) {
-        return text.toLowerCase().contains("npk") || text.toLowerCase().contains("fertilizer") ||
-                text.toLowerCase().contains("nutrients") || text.toLowerCase().contains("compost");
+        return text.toLowerCase().contains("npk") || text.toLowerCase().contains("fertilizer") || text.toLowerCase().contains("nutrients") || text.toLowerCase().contains("compost");
     }
 
     private void requestPermissions() {
